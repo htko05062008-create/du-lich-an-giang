@@ -13,7 +13,6 @@
 		<h1>Du lịch An Giang</h1>
 		<p>Khám phá vẻ đẹp miền Tây sông nước</p>
 	</div>
-
 	<div class="slogan">
 		<div class="row">
 			<div id="b3a" class="block_3">
@@ -48,7 +47,6 @@
 			<img src="images/an_giang.png" class="img">
 		</td>
 	</tr>
-
 	<tr>
 		<td class="cell_img">
 			<img src="images/tra_su.png" class="img">
@@ -59,7 +57,6 @@
 			<a href="sinh_thai.html">Chi tiết</a>
 		</td>
 	</tr>
-
 	<tr>
 		<td class="cell_text">
 			<h3>Du lịch tâm linh</h3>
