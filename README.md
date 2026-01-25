@@ -4,10 +4,82 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Du lịch An Giang</title>
-	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+		}
+
+		.banner {
+			background: url("images/banner_an_giang.png") no-repeat center;
+			background-size: cover;
+			padding: 10rem 0;
+			text-align: center;
+			color: darkgreen;
+		}
+
+		.slogan {
+			background-color: #e6f4f1;
+			text-align: center;
+			padding: 2rem;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.block_3 {
+			width: 33.33%;
+		}
+
+		#b3a:hover,
+		#b3b:hover,
+		#b3c:hover {
+			font-size: 120%;
+			color: red;
+		}
+
+		table {
+			width: 90%;
+			margin: auto;
+		}
+
+		.cell_text {
+			width: 50%;
+			padding: 3rem;
+		}
+
+		.cell_img {
+			width: 50%;
+		}
+
+		.img {
+			width: 100%;
+		}
+
+		footer {
+			background-color: lightgrey;
+			padding: 10px;
+		}
+
+		.link {
+			color: navy;
+		}
+
+		a:hover {
+			color: magenta;
+		}
+
+		form {
+			margin: 40px;
+		}
+	</style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
 	<div class="banner">
 		<h1>Du lịch An Giang</h1>
@@ -32,57 +104,110 @@
 	</div>
 </header>
 
+<!-- NỘI DUNG -->
 <table>
 	<tr>
 		<td class="cell_text">
 			<h3>Giới thiệu An Giang</h3>
-			<p>An Giang là tỉnh thuộc Đồng bằng sông Cửu Long, nổi tiếng với cảnh quan thiên nhiên đa dạng và nền văn hóa đặc sắc.</p>
+			<p>
+				An Giang là tỉnh thuộc Đồng bằng sông Cửu Long, nổi tiếng với cảnh quan đa dạng
+				và nền văn hóa đặc sắc.
+			</p>
 			<ul>
-				<li>Núi Cấm – điểm du lịch sinh thái</li>
+				<li>Núi Cấm – Núi Sam</li>
 				<li>Rừng Tràm Trà Sư</li>
 				<li>Miếu Bà Chúa Xứ</li>
+				<li>Chợ nổi Long Xuyên</li>
 			</ul>
 		</td>
 		<td class="cell_img">
-			<img src="images/nui_cam.jpg" alt="Núi Cấm An Giang" class="img">
+			<img src="images/an_giang.png" class="img">
 		</td>
 	</tr>
 
 	<tr>
 		<td class="cell_img">
-			<img src="images/tra_su.jpg" alt="Rừng Tràm Trà Sư" class="img">
+			<img src="images/tra_su.png" class="img">
 		</td>
 		<td class="cell_text">
-			<h3>Rừng Tràm Trà Sư</h3>
-			<p>Khu rừng ngập nước tiêu biểu, nơi du khách có thể ngồi xuồng ngắm chim và chụp ảnh thiên nhiên.</p>
+			<h3>Du lịch sinh thái</h3>
+			<p>
+				Rừng Tràm Trà Sư là khu rừng ngập nước tiêu biểu, nơi du khách có thể
+				ngồi xuồng ngắm chim và chụp ảnh thiên nhiên.
+			</p>
 		</td>
 	</tr>
 
 	<tr>
 		<td class="cell_text">
-			<h3>Miếu Bà Chúa Xứ</h3>
-			<p>Điểm du lịch tâm linh nổi tiếng, thu hút hàng triệu lượt khách mỗi năm.</p>
+			<h3>Du lịch tâm linh</h3>
+			<p>
+				Miếu Bà Chúa Xứ Núi Sam là điểm hành hương nổi tiếng,
+				thu hút hàng triệu du khách mỗi năm.
+			</p>
 		</td>
 		<td class="cell_img">
-			<img src="images/mieu_ba.jpg" alt="Miếu Bà Chúa Xứ" class="img">
+			<img src="images/mieu_ba.png" class="img">
 		</td>
 	</tr>
 </table>
 
+<!-- FORM ĐĂNG KÝ -->
+<form>
+	<fieldset style="width:50%; margin:auto;">
+		<h2>ĐĂNG KÝ TOUR DU LỊCH AN GIANG</h2>
+
+		<table>
+			<tr>
+				<td>Họ và tên:</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email"></td>
+			</tr>
+			<tr>
+				<td>Số điện thoại:</td>
+				<td><input type="tel"></td>
+			</tr>
+			<tr>
+				<td>Ngày khởi hành:</td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td>Chọn tour:</td>
+				<td>
+					<select>
+						<option>Núi Cấm</option>
+						<option>Rừng Tràm Trà Sư</option>
+						<option>Miếu Bà Chúa Xứ</option>
+						<option>Chợ nổi Long Xuyên</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit">Gửi đăng ký</button></td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+
+<!-- FOOTER -->
 <footer>
 	<div class="row">
 		<div style="width:60%">
 			<p>Liên hệ:</p>
 			<ul>
 				<li>📞 0987 654 321</li>
-				<li>📝 <a href="dang_ki.html" class="link">Đăng ký tour du lịch</a></li>
+				<li>🌐 Du lịch An Giang</li>
 			</ul>
 		</div>
 		<div style="width:40%">
-			<p>Xem thêm:</p>
+			<p>Khám phá thêm:</p>
 			<ul>
-				<li><a href="#" class="link">Du lịch sinh thái</a></li>
-				<li><a href="#" class="link">Du lịch tâm linh</a></li>
+				<li>Du lịch sinh thái</li>
+				<li>Du lịch tâm linh</li>
 			</ul>
 		</div>
 	</div>
