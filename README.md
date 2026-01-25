@@ -1,4 +1,3 @@
-# to3
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -12,25 +11,59 @@
       padding: 0;
       background: #f2f2f2;
     }
+
+    /* Banner đầu trang */
     header {
-      background: #00796b;
+      background-image: url("https://source.unsplash.com/1200x500/?An-Giang,Vietnam");
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 80px 20px;
     }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
     .section {
       margin: 20px auto;
       width: 90%;
       max-width: 960px;
     }
+
     h2 {
       color: #00796b;
     }
+
+    /* Giới thiệu có ảnh */
+    .intro {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .intro img {
+      width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
     .cards {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
     }
+
     .card {
       background: white;
       border-radius: 8px;
@@ -38,14 +71,17 @@
       width: calc(50% - 10px);
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
     }
+
     .card p {
       padding: 10px;
     }
+
     .btn {
       display: inline-block;
       background: #00796b;
@@ -55,8 +91,15 @@
       text-decoration: none;
       margin-top: 10px;
     }
+
     @media (max-width: 600px) {
       .card { width: 100%; }
+      .intro {
+        flex-direction: column;
+      }
+      .intro img {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -69,7 +112,14 @@
 
 <div class="section">
   <h2>Giới thiệu</h2>
-  <p>An Giang là tỉnh thuộc vùng Đồng bằng sông Cửu Long, nổi tiếng với cảnh quan đa dạng, từ núi non đến sông nước và rừng tràm. Du khách có thể tham quan nhiều điểm đến hấp dẫn, tìm hiểu văn hóa bản địa và thưởng thức ẩm thực đặc sản.</p>
+  <div class="intro">
+    <img src="https://source.unsplash.com/600x400/?river,An-Giang" alt="An Giang">
+    <p>
+      An Giang là tỉnh thuộc vùng Đồng bằng sông Cửu Long, nổi tiếng với cảnh quan đa dạng,
+      từ núi non đến sông nước và rừng tràm. Du khách có thể tham quan nhiều điểm đến hấp dẫn,
+      tìm hiểu văn hóa bản địa và thưởng thức ẩm thực đặc sản.
+    </p>
+  </div>
 </div>
 
 <div class="section">
@@ -80,35 +130,4 @@
       <p><strong>Núi Cấm</strong> – Điểm đến với cảnh đẹp thiên nhiên và không khí trong lành.</p>
     </div>
     <div class="card">
-      <img src="https://source.unsplash.com/400x300/?forest,river" alt="Rừng Tràm Trà Sư">
-      <p><strong>Rừng Tràm Trà Sư</strong> – Trải nghiệm du lịch sinh thái thú vị.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?temple,Vietnam" alt="Miếu Bà Chúa Xứ">
-      <p><strong>Miếu Bà Chúa Xứ</strong> – Điểm tâm linh nổi tiếng.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?market,boat" alt="Chợ nổi Long Xuyên">
-      <p><strong>Chợ nổi Long Xuyên</strong> – Trải nghiệm văn hóa chợ nổi độc đáo.</p>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <h2>Các tour hấp dẫn</h2>
-  <ul>
-    <li>Tour 1 ngày: Châu Đốc – Miếu Bà – Núi Sam</li>
-    <li>Tour 2 ngày 1 đêm: Núi Cấm – Rừng Tràm Trà Sư</li>
-    <li>Tour 3 ngày: Long Xuyên – Núi Cấm – Trà Sư</li>
-  </ul>
-  <a href="#booking" class="btn">Đăng ký tour</a>
-</div>
-
-<div class="section" id="booking">
-  <h2>Liên hệ & Đăng ký</h2>
-  <p>📞 Điện thoại: 0987 654 321</p>
-  <p>Nếu bạn muốn đăng ký tour hoặc cần thêm thông tin, vui lòng gọi ngay hoặc gửi email.</p>
-</div>
-
-</body>
-</html>
+      <img src="https://source.unsplash.com/400x300/?forest,r
