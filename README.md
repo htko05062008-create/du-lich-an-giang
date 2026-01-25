@@ -12,7 +12,7 @@
 		}
 
 		.banner {
-			background: url("images/banner_an_giang.png") no-repeat center;
+			background: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/Nui_Cam_An_Giang.jpg") no-repeat center;
 			background-size: cover;
 			padding: 10rem 0;
 			text-align: center;
@@ -57,15 +57,12 @@
 
 		.img {
 			width: 100%;
+			border-radius: 8px;
 		}
 
 		footer {
 			background-color: lightgrey;
 			padding: 10px;
-		}
-
-		.link {
-			color: navy;
 		}
 
 		a:hover {
@@ -121,13 +118,13 @@
 			</ul>
 		</td>
 		<td class="cell_img">
-			<img src="images/an_giang.png" class="img">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/An_Giang_province.jpg" class="img">
 		</td>
 	</tr>
 
 	<tr>
 		<td class="cell_img">
-			<img src="images/tra_su.png" class="img">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Tra_Su_forest.jpg" class="img">
 		</td>
 		<td class="cell_text">
 			<h3>Du lịch sinh thái</h3>
@@ -147,7 +144,7 @@
 			</p>
 		</td>
 		<td class="cell_img">
-			<img src="images/mieu_ba.png" class="img">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Mieu_Ba_Chua_Xu.jpg" class="img">
 		</td>
 	</tr>
 </table>
