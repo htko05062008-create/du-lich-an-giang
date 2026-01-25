@@ -1,114 +1,212 @@
-# to3
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Du lịch An Giang</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-    }
-    header {
-      background: #00796b;
-      color: white;
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Du lịch An Giang</title>
+
+ <style>
+  .banner {
+      background: url("images/banner.png") no-repeat center center;
+      background-size: cover;
+      padding: 12rem 0;
       text-align: center;
-      padding: 20px 0;
-    }
-    .section {
-      margin: 20px auto;
-      width: 90%;
-      max-width: 960px;
-    }
-    h2 {
-      color: #00796b;
-    }
-    .cards {
+      color: darkred;
+  }
+
+  .slogan {
+      background-color: rgb(230, 240, 250);
+      text-align: center;
+      padding: 2rem;
+  }
+
+  .row {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
-    }
-    .card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      width: calc(50% - 10px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .card img {
+      padding: 0 3rem;
+  }
+
+  .block_3 {
+      width: 33.33333%;
+  }
+
+  #b3a:hover, #b3b:hover, #b3c:hover {
+      font-size: 120%;
+      color: red;
+  }
+
+  table {
+      width: 90%;
+      margin: 2rem auto;
+  }
+
+  .cell_img, .cell_text {
+      width: 50%;
+  }
+
+  .cell_text {
+      padding-left: 5rem;
+  }
+
+  .img {
       width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .card p {
+      height: auto;
+  }
+
+  .link {
+      color: navy;
+  }
+
+  a:hover {
+      color: magenta;
+  }
+
+  footer {
+      background-color: lightgrey;
       padding: 10px;
-    }
-    .btn {
-      display: inline-block;
-      background: #00796b;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 4px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    @media (max-width: 600px) {
-      .card { width: 100%; }
-    }
-  </style>
+  }
+
+  fieldset {
+      width: 60%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+  }
+
+  form table {
+      width: 100%;
+  }
+
+  form td {
+      padding: 8px;
+  }
+
+  button {
+      color: blue;
+      font-weight: bold;
+  }
+ </style>
 </head>
+
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
-  <h1>Du lịch An Giang</h1>
-  <p>Khám phá thiên nhiên – văn hóa – trải nghiệm đặc sắc miền Tây Nam Bộ</p>
+ <div class="banner">
+  <h1>Du lịch An Giang – Vùng đất non nước hữu tình</h1>
+ </div>
+
+ <div class="slogan">
+  <div class="row">
+   <div id="b3a" class="block_3">
+    <h2>Thiên nhiên</h2>
+    <p>Núi non – sông nước – rừng tràm</p>
+   </div>
+   <div id="b3b" class="block_3">
+    <h2>Văn hóa</h2>
+    <p>Bản sắc dân tộc đa dạng</p>
+   </div>
+   <div id="b3c" class="block_3">
+    <h2>Trải nghiệm</h2>
+    <p>Ẩm thực và lễ hội đặc sắc</p>
+   </div>
+  </div>
+ </div>
 </header>
 
-<div class="section">
-  <h2>Giới thiệu</h2>
-  <p>An Giang là tỉnh thuộc vùng Đồng bằng sông Cửu Long, nổi tiếng với cảnh quan đa dạng, từ núi non đến sông nước và rừng tràm. Du khách có thể tham quan nhiều điểm đến hấp dẫn, tìm hiểu văn hóa bản địa và thưởng thức ẩm thực đặc sản.</p>
-</div>
+<!-- ===== NỘI DUNG ===== -->
+<table>
+ <tr>
+  <td class="cell_text">
+   <h3>An Giang – Điểm đến hấp dẫn</h3>
+   <ul>
+    <li>Rừng tràm Trà Sư</li>
+    <li>Núi Cấm – Thất Sơn</li>
+    <li>Miếu Bà Chúa Xứ Núi Sam</li>
+    <li>Ẩm thực đậm chất miền Tây</li>
+   </ul>
+  </td>
+  <td class="cell_img">
+   <img src="images/an_giang.png" class="img">
+  </td>
+ </tr>
+</table>
 
-<div class="section">
-  <h2>Địa điểm nổi bật</h2>
-  <div class="cards">
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?mountain,Vietnam" alt="Núi Cấm">
-      <p><strong>Núi Cấm</strong> – Điểm đến với cảnh đẹp thiên nhiên và không khí trong lành.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?forest,river" alt="Rừng Tràm Trà Sư">
-      <p><strong>Rừng Tràm Trà Sư</strong> – Trải nghiệm du lịch sinh thái thú vị.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?temple,Vietnam" alt="Miếu Bà Chúa Xứ">
-      <p><strong>Miếu Bà Chúa Xứ</strong> – Điểm tâm linh nổi tiếng.</p>
-    </div>
-    <div class="card">
-      <img src="https://source.unsplash.com/400x300/?market,boat" alt="Chợ nổi Long Xuyên">
-      <p><strong>Chợ nổi Long Xuyên</strong> – Trải nghiệm văn hóa chợ nổi độc đáo.</p>
-    </div>
-  </div>
-</div>
+<!-- ===== FORM ĐĂNG KÝ ===== -->
+<form>
+ <fieldset>
+  <h2 style="text-align:center;">ĐĂNG KÝ THAM QUAN DU LỊCH AN GIANG</h2>
 
-<div class="section">
-  <h2>Các tour hấp dẫn</h2>
-  <ul>
-    <li>Tour 1 ngày: Châu Đốc – Miếu Bà – Núi Sam</li>
-    <li>Tour 2 ngày 1 đêm: Núi Cấm – Rừng Tràm Trà Sư</li>
-    <li>Tour 3 ngày: Long Xuyên – Núi Cấm – Trà Sư</li>
-  </ul>
-  <a href="#booking" class="btn">Đăng ký tour</a>
-</div>
+  <table>
+   <tr>
+    <td><label for="hoten">Họ và tên:</label></td>
+    <td><input id="hoten" type="text" required></td>
+   </tr>
 
-<div class="section" id="booking">
-  <h2>Liên hệ & Đăng ký</h2>
-  <p>📞 Điện thoại: 0987 654 321</p>
-  <p>Nếu bạn muốn đăng ký tour hoặc cần thêm thông tin, vui lòng gọi ngay hoặc gửi email.</p>
-</div>
+   <tr>
+    <td><label for="email">Email:</label></td>
+    <td><input id="email" type="email" required></td>
+   </tr>
+
+   <tr>
+    <td><label for="ngaysinh">Ngày sinh:</label></td>
+    <td><input id="ngaysinh" type="date"></td>
+   </tr>
+
+   <tr>
+    <td>Giới tính:</td>
+    <td>
+     <input type="radio" name="gioitinh" id="nam">
+     <label for="nam">Nam</label>
+     <input type="radio" name="gioitinh" id="nu">
+     <label for="nu">Nữ</label>
+    </td>
+   </tr>
+   <tr>
+    <td><label for="diachi">Địa chỉ:</label></td>
+    <td><textarea id="diachi" rows="4"></textarea></td>
+   </tr>
+
+   <tr>
+    <td>Sở thích:</td>
+    <td>
+     <input type="checkbox" id="st1">
+     <label for="st1">Sinh thái</label>
+     <input type="checkbox" id="st2">
+     <label for="st2">Tâm linh</label>
+     <input type="checkbox" id="st3">
+     <label for="st3">Ẩm thực</label>
+    </td>
+   </tr>
+
+   <tr>
+    <td><label for="hoso">Giấy tờ đính kèm:</label></td>
+    <td><input type="file" id="hoso"></td>
+   </tr>
+
+   <tr>
+    <td><label for="tour">Chọn điểm tham quan:</label></td>
+    <td>
+     <select id="tour">
+      <option>Rừng tràm Trà Sư</option>
+      <option>Núi Cấm</option>
+      <option>Miếu Bà Chúa Xứ</option>
+      <option>Hồ Tà Pạ</option>
+     </select>
+    </td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td><button type="submit">Gửi thông tin</button></td>
+   </tr>
+  </table>
+ </fieldset>
+</form>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+ <p>© Du lịch An Giang | Liên hệ: 0296 123 456</p>
+</footer>
 
 </body>
 </html>
