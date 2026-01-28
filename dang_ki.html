@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Đăng Ký Tour Du Lịch - An Giang</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+	<div class="banner">
+		<h1>ĐĂNG KÝ TOUR DU LỊCH AN GIANG</h1>
+	</div>
+	<div class="nav">
+		<a href="index.html" class="nav-link">🏠 Trang Chủ</a>
+		<a href="dia_diem.html" class="nav-link">🗺️ Địa Điểm Chính</a>
+		<a href="mon_an.html" class="nav-link">🍴 Ẩm Thực</a>
+		<a href="dang_ki.html" class="nav-link active">📝 Đăng Ký Tour</a>
+	</div>
+</header>
+
+<div class="form-container">
+<form method="POST" action="#">
+	<fieldset>
+		<legend>📋 Biểu Mẫu Đăng Ký Tham Gia Tour</legend>
+		<table class="form-table">
+			<tr>
+				<td><label for="hoten">Họ và tên: <span class="required">*</span></label></td>
+				<td><input id="hoten" type="text" name="hoten" required placeholder="Nhập họ và tên..."></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email: <span class="required">*</span></label></td>
+				<td><input id="email" type="email" name="email" required placeholder="Nhập email của bạn..."></td>
+			</tr>
+			<tr>			
+				<td><label for="phone">Số Điện Thoại: <span class="required">*</span></label></td>
+				<td><input id="phone" type="tel" name="phone" required placeholder="Nhập số điện thoại..."></td>
+			</tr>
+			<tr>			
+				<td><label for="ngaysinh">Ngày Sinh:</label></td>
+				<td><input id="ngaysinh" type="date" name="ngaysinh"></td>
+			</tr>
+			<tr>
+				<td><label>Giới Tính:</label></td>
+				<td>
+				<input id="nam" type="radio" name="gioitinh" value="nam">
+				<label for="nam">Nam</label>
+				<input id="nu" type="radio" name="gioitinh" value="nu">
+				<label for="nu">Nữ</label>
+				</td>
+			</tr>
+			<tr>			
+				<td><label for="diachi">Địa Chỉ:</label></td>
+				<td><textarea id="diachi" name="diachi" rows="3" cols="30" placeholder="Nhập địa chỉ của bạn..."></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Chọn Tour Du Lịch: <span class="required">*</span></label></td>
+				<td>
+				<input type="checkbox" id="tour1" name="tourchoice" value="Núi Chùa">
+				<label for="tour1">Núi Chùa Phật</label><br>
+				<input type="checkbox" id="tour2" name="tourchoice" value="Chợ Nổi">
+				<label for="tour2">Chợ Nổi Cái Bè</label><br>
+				<input type="checkbox" id="tour3" name="tourchoice" value="Sông Hậu">
+				<label for="tour3">Du Thuyền Sông Hậu</label><br>
+				<input type="checkbox" id="tour4" name="tourchoice" value="Sinh Thái">
+				<label for="tour4">Khu Du Lịch Sinh Thái</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="tour">Chọn Gói Tour: <span class="required">*</span></label></td>
+				<td><select id="tour" name="tour" required>
+					<option value="">-- Chọn gói tour --</option>
+					<option value="1day">Tour 1 Ngày - 250.000 VNĐ</option>
+					<option value="2day">Tour 2 Ngày 1 Đêm - 450.000 VNĐ</option>
+					<option value="3day">Tour 3 Ngày 2 Đêm - 650.000 VNĐ</option>
+					<option value="custom">Tour Tùy Chỉnh - Liên Hệ</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="soluong">Số Lượng Khách: <span class="required">*</span></label></td>
+				<td><input id="soluong" type="number" name="soluong" min="1" value="1" required></td>
+			</tr>
+			<tr>
+				<td><label for="ghichu">Ghi Chú Thêm:</label></td>
+				<td><textarea id="ghichu" name="ghichu" rows="3" cols="30" placeholder="Viết ghi chú hoặc yêu cầu đặc biệt..."></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<button type="submit" class="btn-submit">✓ Gửi Đơn Đăng Ký</button>
+					<button type="reset" class="btn-reset">⟲ Xóa Dữ Liệu</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center;">
+					<a href="index.html" class="link">🏠 Về Trang Chủ</a>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</div>
+
+<footer>
+	<div class="row">
+		<div style="width: 60%;">
+			<p>📞 Liên Lạc:</p>
+			<ul>
+				<li>Điện thoại: 0300-123-456</li>
+				<li>Email: <a href="mailto:dulichanggiang@gmail.com" class="link">dulichanggiang@gmail.com</a></li>
+				<li>Giờ làm việc: 7:00 - 17:00 (Thứ 2 - Chủ Nhật)</li>
+			</ul>
+		</div>
+		<div style="width: 10%;"></div>
+		<div style="width: 30%;">
+		<p>🔗 Liên Kết Nhanh:</p>
+			<ul>
+				<li><a href="index.html" class="link">Trang Chủ</a></li>
+			<li><a href="dia_diem.html" class="link">Địa Điểm Chính</a></li>
+			<li><a href="mon_an.html" class="link">Ẩm Thực</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+</body>
+</html>
