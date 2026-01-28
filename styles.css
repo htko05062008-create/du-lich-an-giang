@@ -17,11 +17,33 @@ html {
 
 .banner {
 	background: linear-gradient(135deg, #00897b 0%, #0097a7 50%, #00838f 100%);
+	background-image: url('images/an-giang-banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	padding-top: 12rem;
 	padding-bottom: 12rem;
 	text-align: center !important;
 	color: white !important;
 	box-shadow: 0 8px 24px rgba(0, 137, 123, 0.25);
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+	z-index: 1;
+}
+
+.banner-content {
+	position: relative;
+	z-index: 2;
 }
 
 .banner h1 {
